@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Simple Sidebar - Start Bootstrap Template</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="/css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="d-flex" id="wrapper">
+            <!-- Sidebar-->
+            <div class="border-end bg-white" id="sidebar-wrapper">
+                <div class="sidebar-heading border-bottom bg-light">Vehicle Cybersecurity<br>Requirements Finder</div>
+                <div class="list-group list-group-flush"style="width:320px;">
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/describe/개발단계.html">개발 단계</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/describe/생산단계.html">생산 단계</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/describe/생산후단계.html">생산 후 단계</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/describe/사이버보안위험.html">사이버보안 위험 식별 및 관리</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/describe/위험평가분석.html">위험 평가 분석 및 주요사항 식별</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/describe/위험관리확인.html">테스트를 포함한 위험 관리 확인</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/describe/위험평가최신.html">위험 평가 최신 상태로 유지 확인</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/describe/사이버공격.html">사이버 공격에 대한 예방 조치 확인</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/describe/사이버보안성공.html">사이버보안 성공 사례 분석 지원</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/describe/완화조치.html">완화 조치가 의도대로 제공하는지 식별</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/describe/모니터링대응.html">사이버보안 공격 모니터링 및 대응</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/describe/하위조직.html">하위 조직과의 종속성</a>
+                </div>
+            </div>
+            <!-- Page content wrapper-->
+            <div id="page-content-wrapper">
+
+                <!-- Top navigation-->
+                <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                    <div class="container-fluid">
+                        <button class="btn btn-primary" id="sidebarToggle">Toggle Menu</button>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                                <li class="nav-item active"><a class="nav-link" href="/homepage.html">Home</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <!-- Page content-->
+                <div class="container-fluid" style="margin-top:60px;">
+                    <h1 class="mt-4">check requirements</h1>
+                    <br>
+                    <div style="background-color:white; border:1px solid black; margin-left: 10px; margin-right: 10px;">
+                        <p style="margin-left: 10px; margin-top: 10px; font-size:larger;">Production control plan</p>
+                        <form style="margin-left: 10px;">
+                            <p style="line-height: 1px;"><label><input type="checkbox" name="number" value="01"> [1] 개발 단계에서 사이버보안 요구사항을 적용하기 위한 생산 관리 계획이 수립되었는가?</label></p>
+                            <p style="line-height: 1px;"><label><input type="checkbox" name="number" value="02"> [2] 생산 관리 계획은 개발 후 단계를 위해 나열된 사이버보안 요구사항이 포함되어 있는가?</label></p>
+                            <p style="line-height: 1px;"><label><input type="checkbox" name="number" value="03"> [3] 생산 관리 계획에는 생산 과정에서 사이버보안 요구사항을 달성하는 방법에 대한 세부 사항이 포함되어 있는가?</label></p>
+                            <p style="line-height: 1px;"><label><input type="checkbox" name="number" value="04"> [4] 생산 관리 계획의 무단 변경 시 아이템 또는 컴포넌트를 구성하는 방법에 대한 세부 사항이 포함되어 있는가?</label></p>
+                            <p style="line-height: 1px;"><label><input type="checkbox" name="number" value="05"> [5] 생산 관리 계획에는 생산 과정에서 사이버보안 요구사항이 충족되었는지 확인하기 위한 활동이 포함되어 있는가?</label></p>
+                        </form>
+                        <form style="float:right;">
+                            <input class="blue-button" type="button" value="Check the Results" onclick="window.location.href='/checkresult/생산체크결과.html'; clickBtn();">
+                        </form>
+                    </div>
+                    <div id="output"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="/js/생산단계.js"></script>
+    </body>
+</html>
